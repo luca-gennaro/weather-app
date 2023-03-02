@@ -18,7 +18,7 @@ const Forecast = ({ data }: Props): JSX.Element => {
     const today = data.list[0]
 
     return (
-        <div className="w-full md:max-w-[500px] py-4 md:py-4 md:px-10 lg:px-24 h-full lg:h-auto bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg">
+        <div className="w-full md:max-w-[500px] py-4 md:py-4 md:px-10 lg:px-24 h-full bg-white bg-opacity-20 backdrop-blur-lg rounded drop-shadow-lg">
             <div className="mx-auto w-[300px]">
                 <section className="text-center">
                     <h2 className="text-2xl font-black">
@@ -52,10 +52,10 @@ const Forecast = ({ data }: Props): JSX.Element => {
                 </section>
 
                 <section className="flex flex-wrap justify-between text-zinc-700">
-                    <div className="w-[140px] text-xs font-bold flex flex-col items-center bg-white/20 backdrop:blur-lg rounded drop-shadow-lg py-4 mb-5">
+                    <div className="w-[140px] text-xs font-bold flex flex-col items-center bg-white/20 backdrop:blur-lg rounded drop-shadow-lg py-2 mb-2">
                         <Sunrise /> <span className="mt-2">{getSunTime(data.sunrise)}</span>
                     </div>
-                    <div className="w-[140px] text-xs font-bold flex flex-col items-center bg-white/20 backdrop:blur-lg rounded drop-shadow-lg py-4 mb-5">
+                    <div className="w-[140px] text-xs font-bold flex flex-col items-center bg-white/20 backdrop:blur-lg rounded drop-shadow-lg py-2 mb-2">
                         <Sunset /> <span className="mt-2">{getSunTime(data.sunset)}</span>
                     </div>
 
